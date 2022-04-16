@@ -167,18 +167,19 @@ static void task_but(void *pvParameters) {
         delayTicks = 900;
       }
     }
+/*
 	 if (xSemaphoreTake(xSemaphoreBut1, 1000)) {
-		 /* atualiza frequencia */
+		 / * atualiza frequencia * /
 		 delayTicks += 100;
 
-		 /* envia nova frequencia para a task_led */
+		 / * envia nova frequencia para a task_led * /
 		 xQueueSend(xQueueLedFreq, (void *)&delayTicks, 10);
 
-		 /* garante range da freq. */
+		 / * garante range da freq. * /
 		 if (delayTicks == 100) {
 			 delayTicks = 900;
 		 }
-	 }
+	 }*/
   }
 }
 
